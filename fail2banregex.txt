@@ -1,0 +1,3 @@
+[Definition]
+failregex = ^%(__prefix_line)sConnection closed by (authenticating|invalid) user .* <HOST> port \d+ \[preauth\]$
+            ^%(__prefix_line)sInvalid user .* from <HOST> port \d+$
