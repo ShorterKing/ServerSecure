@@ -4,3 +4,5 @@ sudo nano /etc/fail2ban/filter.d/sshd.local
 [Definition]
 failregex = ^%(__prefix_line)sConnection closed by (authenticating|invalid) user .* <HOST> port \d+ \[preauth\]$
             ^%(__prefix_line)sInvalid user .* from <HOST> port \d+$
+            ^%(__prefix_line)serror: kex_exchange_identification: .*$
+            ^%(__prefix_line)sbanner exchange: Connection from <HOST> port \d+: invalid format$
